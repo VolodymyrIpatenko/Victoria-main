@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container {
+  padding: 40px 87px 40px 57px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 20px;
+  &__link {
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: rgba(107, 107, 107, 1);
+  }
+}
+
+.contacts-list {
+  &__link {
+    margin-left: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: rgba(107, 107, 107, 1);
+  }
+}
+
+.wrap {
+  display: flex;
+}

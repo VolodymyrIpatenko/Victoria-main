@@ -1,0 +1,71 @@
+.abonements-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  &__item {
+    transition: 3s;
+  }
+  &__item:not(:last-child) {
+    width: 302px;
+    height: 489px;
+    padding: 53px 21px 188px;
+    border-radius: 5px;
+    background: rgba(67, 72, 77, 1);
+  }
+  &__item:last-child {
+    display: flex;
+    padding: 7px 246px 10px 25px;
+    width: 628px;
+    height: 65px;
+    border-radius: 5px;
+    background: rgba(67, 72, 77, 1);
+  }
+  &__item:hover {
+    cursor: pointer;
+    background-color: rgba(244, 242, 241, 1);
+  }
+  &__item:hover h3,
+  &__item:hover p {
+    color: rgba(67, 72, 77, 1);
+  }
+
+  &__item-title {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(244, 242, 241, 1);
+  }
+  &__item-price {
+    display: flex;
+    justify-content: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(244, 242, 241, 1);
+  }
+
+  &__item-duration {
+    display: flex;
+    max-width: 211px;
+    justify-content: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(244, 242, 241, 1);
+  }
+}
+
+.abonements-container {
+  padding: 27px 80px 61px;
+}

@@ -1,0 +1,10 @@
+.coaches-container {
+  padding: 100px 80px;
+}
+
+.coaches-list {
+  display: flex;
+  &__item {
+    max-width: 630px;
+  }
+}
