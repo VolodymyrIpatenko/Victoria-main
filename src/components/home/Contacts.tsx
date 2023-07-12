@@ -1,4 +1,7 @@
 import React from 'react';
+import { GiPhone } from 'react-icons/gi';
+import { MdOutlineLocationOn } from 'react-icons/md';
+import { CiCalendar } from 'react-icons/ci';
 
 const Contacts: React.FC = () => {
   return (
@@ -8,25 +11,35 @@ const Contacts: React.FC = () => {
         <address>
           <ul>
             <li>
-              <p>Телефон</p>
-              <a href="tel:+380950335563">+380950335563</a>
+              <p>
+                <GiPhone style={{ marginRight: '10px' }} />
+                Телефон
+              </p>
+
+              <a style={{ marginLeft: '25px' }} className="contacts__link" href="tel:+380950335563">
+                +380950335563
+              </a>
             </li>
             <li>
-              <p>Адреса:</p>
-              <p>вул.Спортивна 3, Остриця, Чернівецька обл.</p>
+              <p>
+                <MdOutlineLocationOn /> Адреса:
+              </p>
+              <p style={{ marginLeft: '25px' }}>вул.Спортивна 3, Остриця, Чернівецька обл.</p>
             </li>
           </ul>
         </address>
         <ul>
           <li>
-            <p>Режим роботи:</p>
             <p>
+              <CiCalendar /> Режим роботи:
+            </p>
+            <p style={{ marginLeft: '25px' }}>
               Понеділок-П'ятниця <time>8:00-21:00</time>
             </p>
-            <p>
+            <p style={{ marginLeft: '25px' }}>
               Субота <time>10:00-19:00</time>
             </p>
-            <p>Неділя вихідний</p>
+            <p style={{ marginLeft: '25px' }}>Неділя вихідний</p>
           </li>
         </ul>
 

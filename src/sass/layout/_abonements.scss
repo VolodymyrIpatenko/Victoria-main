@@ -4,10 +4,28 @@
   gap: 24px;
   flex-wrap: wrap;
 
-  &__item {
-    transition: 3s;
+  &__item-btn {
+    width: 195px;
+    line-height: 48px;
+    cursor: pointer;
+    font-family: Lato;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(250, 109, 6, 1);
+    color: rgba(244, 242, 241, 1);
   }
+
   &__item:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    transition: 3s;
     width: 302px;
     height: 489px;
     padding: 53px 21px 188px;
@@ -16,14 +34,15 @@
   }
   &__item:last-child {
     display: flex;
-    padding: 7px 246px 10px 25px;
+    transition: 2s;
+    padding: 7px 36px 10px 25px;
     width: 628px;
     height: 65px;
     border-radius: 5px;
     background: rgba(67, 72, 77, 1);
   }
+
   &__item:hover {
-    cursor: pointer;
     background-color: rgba(244, 242, 241, 1);
   }
   &__item:hover h3,
@@ -32,33 +51,27 @@
   }
 
   &__item-title {
-    font-family: Lato;
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: 0px;
-    text-align: left;
     color: rgba(244, 242, 241, 1);
   }
   &__item-price {
     display: flex;
     justify-content: center;
-    font-family: Lato;
+    margin-right: 20px;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0px;
     text-align: left;
     color: rgba(244, 242, 241, 1);
   }
 
   &__item-duration {
     display: flex;
+    margin-top: 36px;
     max-width: 211px;
     justify-content: center;
-    font-family: Lato;
-    font-size: 20px;
-    font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
