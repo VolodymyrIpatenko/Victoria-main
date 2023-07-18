@@ -1,6 +1,7 @@
 import { NavLink, Link } from 'react-router-dom';
 import { GiPhone } from 'react-icons/gi';
 import navigation from '../../common/navigation/Navigation';
+import SwitchMode from '../switch-btn/LightSwitch';
 // import MobileMenuComponent from './MobileMenu';
 
 const HeaderComponent: React.FC = () => {
@@ -34,6 +35,7 @@ const HeaderComponent: React.FC = () => {
             </ul>
           </div>
         </header>
+        <SwitchMode />
       </div>
       {/* <MobileMenuComponent/> */}
     </>

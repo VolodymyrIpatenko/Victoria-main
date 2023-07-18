@@ -1,0 +1,50 @@
+.contact-form {
+  width: 688px;
+  padding: 80px 120px;
+  border-radius: 8px;
+  background: rgba(24, 28, 31, 1);
+
+  &__input {
+    margin-top: 32px;
+    width: 448px;
+    height: 48px;
+    border: 1px solid rgba(89, 95, 101, 1);
+    border-radius: 8px;
+    background-color: rgba(89, 95, 101, 1);
+  }
+  &__textarea {
+    margin-top: 32px;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(89, 95, 101, 1);
+    background-color: rgba(89, 95, 101, 1);
+    border-radius: 8px;
+    resize: none;
+  }
+  &__btn {
+    width: 448px;
+    height: 48px;
+    margin-top: 37px;
+    border: 1px solid rgba(89, 95, 101, 1);
+    border-radius: 8px;
+    background-color: rgba(250, 109, 6, 1);
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(244, 242, 241, 1);
+  }
+  &__heading {
+    font-family: Abril Fatface;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    color: rgba(250, 109, 6, 1);
+  }
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}

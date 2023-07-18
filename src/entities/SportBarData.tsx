@@ -4,6 +4,6 @@ type ProductsData = {
   category: string;
   price: string;
   id: number;
-}
+};
 
 export default ProductsData;

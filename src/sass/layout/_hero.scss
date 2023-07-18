@@ -10,7 +10,7 @@
 
 .hero {
   position: relative;
-  background: linear-gradient(180deg, rgba(67, 72, 77, 0) 0%, #43484d 100%);
+  // background: linear-gradient(180deg, rgba(67, 72, 77, 0) 0%, #43484d 100%);
   &-container {
     padding: 180px 55px 0px 55px;
   }
@@ -55,6 +55,9 @@
 }
 
 .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   &__link {
     font-size: 55px;
     color: rgba(86, 86, 86, 1);

@@ -5,7 +5,6 @@ import './sass/main.scss';
 import { BreakpointProvider } from 'react-socks';
 import { BrowserRouter } from 'react-router-dom';
 import DarkModeProvider from './context/DarkModeContext';
-// import DarkModeProvider from './context/DarkModeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
