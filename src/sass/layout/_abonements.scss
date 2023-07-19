@@ -30,7 +30,7 @@
     height: 489px;
     padding: 53px 21px 188px;
     border-radius: 5px;
-    background: rgba(67, 72, 77, 1);
+    background: $main-bg-color;
   }
   &__item:last-child {
     display: flex;
@@ -39,7 +39,7 @@
     width: 628px;
     height: 65px;
     border-radius: 5px;
-    background: rgba(67, 72, 77, 1);
+    background-color: $main-bg-color;
   }
 
   &__item:hover {
@@ -73,7 +73,6 @@
     max-width: 211px;
     justify-content: center;
     line-height: 40px;
-    letter-spacing: 0em;
     text-align: center;
     color: rgba(244, 242, 241, 1);
   }

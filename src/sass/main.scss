@@ -1,6 +1,10 @@
 @import './base/normalize';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './components/_signup-btn';
 @import './layout/header';
 @import './components/heading';
+@import './layout/navigation';
 @import './components/backdrop';
 @import './components/modal-img';
 @import './layout/hero';

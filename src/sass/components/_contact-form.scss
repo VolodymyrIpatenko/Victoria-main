@@ -1,31 +1,31 @@
 .contact-form {
-  width: 688px;
-  padding: 80px 120px;
+  width: 550px;
+  padding: 80px;
   border-radius: 8px;
-  background: rgba(24, 28, 31, 1);
+  background-color: rgba(24, 28, 31, 1);
 
   &__input {
     margin-top: 32px;
-    width: 448px;
+    width: 350px;
     height: 48px;
-    border: 1px solid rgba(89, 95, 101, 1);
+    border: 1px solid $main-bg-color;
     border-radius: 8px;
-    background-color: rgba(89, 95, 101, 1);
+    background-color: $main-bg-color;
   }
   &__textarea {
     margin-top: 32px;
-    width: 448px;
+    width: 350px;
     height: 120px;
-    border: 1px solid rgba(89, 95, 101, 1);
-    background-color: rgba(89, 95, 101, 1);
+    border: 1px solid $main-bg-color;
+    background-color: $main-bg-color;
     border-radius: 8px;
     resize: none;
   }
   &__btn {
-    width: 448px;
+    width: 350px;
     height: 48px;
     margin-top: 37px;
-    border: 1px solid rgba(89, 95, 101, 1);
+    border: 1px solid $main-bg-color;
     border-radius: 8px;
     background-color: rgba(250, 109, 6, 1);
     font-family: Lato;

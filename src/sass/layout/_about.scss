@@ -1,20 +1,26 @@
 .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 38px;
+  @include desk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+  }
 }
 
 .container {
-  padding: 27px 80px 61px;
+  @include desk {
+    padding: 27px 80px 61px;
+  }
 }
 
 .about-desc {
-  max-width: 640px;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.005em;
-  text-align: left;
+  @include desk {
+    max-width: 640px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+  }
 }

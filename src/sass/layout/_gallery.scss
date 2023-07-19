@@ -1,24 +1,32 @@
 .gallery-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  @include desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 .gallery-row {
-  display: grid;
-  gap: 30px;
+  @include desk {
+    display: grid;
+    gap: 30px;
+  }
 }
 
 .gallery-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
+  @include desk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
 }
 
 .breakpoint {
-  display: flex;
-  gap: 20px;
-  margin-left: auto;
-  font-size: 30px;
-  cursor: pointer;
+  @include desk {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    font-size: 30px;
+    cursor: pointer;
+  }
 }
