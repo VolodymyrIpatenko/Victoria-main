@@ -1,6 +1,6 @@
 import React, { useState, useContext, ChangeEvent } from 'react';
 import Modal from '../modal/Modal';
-// import validator from 'validator';
+import validator from 'validator';
 import sendEmail from '../../utils/SubmitFunction';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import { useToggle } from '../../hooks/customToggle';
@@ -50,7 +50,7 @@ const Contacts: React.FC = () => {
     <main>
       <section>
         <div className={`${Theme} contact-container`}>
-          <form action="" className="contact-form">
+          <form onSubmit={sendEmail} className="contact-form">
             <h2 className="contact-form__heading">Записатися</h2>
             <div>
               <input className="contact-form__input" type="text" />
@@ -65,7 +65,18 @@ const Contacts: React.FC = () => {
                 placeholder="Повідомлення"
               ></textarea>
             </div>
-            <button className="contact-form__btn">Записатися</button>
+            <button onClick={() => setModalOpen.toggle()} className="contact-form__btn">
+              Записатися
+            </button>
+            {isModalOpen ? (
+              <Modal>
+                {/* <ContactsBackdrop>
+                  <ModalContacts> */}
+                <p>Дякуємо!В найближчий час ми з вами зв'яжемося.</p>
+                {/* </ModalContacts>
+                </ContactsBackdrop> */}
+              </Modal>
+            ) : null}
           </form>
         </div>
       </section>

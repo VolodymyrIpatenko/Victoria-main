@@ -8,12 +8,17 @@
 }
 
 .container {
+  padding: 40px 21px;
+  background-color: white;
   @include desk {
     padding: 27px 80px 61px;
   }
 }
 
 .about-desc {
+  text-align: left;
+  color: rgba(67, 72, 77, 1);
+
   @include desk {
     max-width: 640px;
     font-family: Lato;
@@ -22,5 +27,14 @@
     line-height: 24px;
     letter-spacing: 0.005em;
     text-align: left;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 200px;
+  @include desk {
+    width: 600px;
+    height: 340px;
   }
 }

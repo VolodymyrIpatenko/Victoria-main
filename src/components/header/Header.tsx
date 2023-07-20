@@ -38,11 +38,6 @@ const HeaderComponent: React.FC = () => {
                 </a>
               </li>
             </ul>
-            {/* <div>
-              <Breakpoint small down>
-                <AiOutlineMenu></AiOutlineMenu>
-              </Breakpoint>
-            </div> */}
           </div>
           <Breakpoint small down>
             <AiOutlineMenu></AiOutlineMenu>

@@ -17,7 +17,7 @@ const AbonementComponent: React.FC = () => {
                 <h3 className="abonements-list__item-title">{duration}</h3>
                 <p className="abonements-list__item-price">{price}</p>
                 <p className="abonements-list__item-duration">{expires}</p>
-                <button className="abonements-list__item-btn">{action}</button>
+                <button className="signup-btn">{action}</button>
               </li>
             );
           })}

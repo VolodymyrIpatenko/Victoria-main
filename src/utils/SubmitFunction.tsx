@@ -7,7 +7,7 @@ export default function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     result => {
       setTimeout(() => {
         window.location.reload();
-      }, 3500);
+      }, 350000);
     },
     // error => {
     //   error.text;

@@ -1,4 +1,6 @@
 .coaches-container {
+  padding: 40px 15px;
+  background-color: white;
   @include desk {
     padding: 100px 80px;
   }

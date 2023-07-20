@@ -1,10 +1,13 @@
 .second-heading {
-  margin-bottom: 40px;
   font-family: Abril Fatface;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 48px;
-  letter-spacing: 0px;
   text-align: left;
   color: rgba(86, 86, 86, 1);
+
+  @include desk {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
 }

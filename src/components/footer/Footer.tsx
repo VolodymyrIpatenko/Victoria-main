@@ -1,5 +1,7 @@
 // import { Footer, MailLink } from './Footer.styled';
 // import { LogoImg } from '../header/Header.styled';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { Breakpoint } from 'react-socks';
 import { Outlet, Link } from 'react-router-dom';
 import { GiPhone } from 'react-icons/gi';
 import navigation from '../../common/navigation/Navigation';
@@ -12,7 +14,7 @@ const PageFooter = () => {
           <Link to="/">
             <img src={process.env.PUBLIC_URL + '/logo-type.png'} alt="логотип сайту" />
           </Link>
-          {/* <div className="wrap"> */}
+
           <nav className="nav">
             <ul className="nav-list">
               {navigation.map(({ id, title, path }, ind) => (
@@ -24,16 +26,19 @@ const PageFooter = () => {
               ))}
             </ul>
           </nav>
-          <div className="contacts-list">
-            <GiPhone></GiPhone>
-            <a className="contacts-list__link" href="tel:+380 95 033 5563">
-              +380 95 033 5563
-            </a>
-          </div>
-          {/* </div> */}
+          <ul className="contacts-list">
+            <li>
+              <a className="contacts-list__link" href="tel:+380 95 033 5563">
+                <GiPhone></GiPhone>
+                +380 95 033 5563
+              </a>
+            </li>
+          </ul>
+          <Breakpoint small down>
+            <AiOutlineMenu></AiOutlineMenu>
+          </Breakpoint>
         </div>
       </footer>
-      {/* <MobileMenuComponent/> */}
     </>
   );
 };

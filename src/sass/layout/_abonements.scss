@@ -1,45 +1,72 @@
 .abonements-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 7px;
   flex-wrap: wrap;
 
-  &__item-btn {
-    width: 195px;
-    line-height: 48px;
-    cursor: pointer;
-    font-family: Lato;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(250, 109, 6, 1);
-    color: rgba(244, 242, 241, 1);
+  @include desk {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
   }
 
   &__item:not(:last-child) {
+    width: 160px;
+    height: 257px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
+    gap: 12px;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
-    letter-spacing: 0em;
     transition: 3s;
-    width: 302px;
-    height: 489px;
-    padding: 53px 21px 188px;
     border-radius: 5px;
     background: $main-bg-color;
+    @include desk {
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      gap: 36px;
+      // font-size: 20px;
+      // font-weight: 400;
+      // line-height: 32px;
+      // letter-spacing: 0em;
+      // transition: 3s;
+      width: 302px;
+      height: 489px;
+      padding: 53px 21px 188px;
+      // border-radius: 5px;
+      // background: $main-bg-color;
+    }
   }
   &__item:last-child {
-    display: flex;
+    width: 330px;
+    height: 90px;
     transition: 2s;
-    padding: 7px 36px 10px 25px;
-    width: 628px;
-    height: 65px;
     border-radius: 5px;
     background-color: $main-bg-color;
+    @include desk {
+      display: flex;
+      padding: 7px 36px 10px 25px;
+      width: 628px;
+      height: 65px;
+    }
+  }
+  &__item:last-child p {
+    margin-left: 10px;
+  }
+
+  &__item:last-child h3 {
+    display: inline-block;
+    font-family: Abril Fatface;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  &__item:last-child p {
+    display: inline-block;
   }
 
   &__item:hover {
@@ -51,33 +78,66 @@
   }
 
   &__item-title {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-    color: rgba(244, 242, 241, 1);
-  }
-  &__item-price {
-    display: flex;
-    justify-content: center;
-    margin-right: 20px;
-    font-size: 40px;
+    font-family: Lato;
+    font-size: 18px;
     font-weight: 700;
     line-height: 48px;
-    text-align: left;
     color: rgba(244, 242, 241, 1);
+
+    @include desk {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48px;
+    }
+  }
+
+  &__item:last-child button {
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    height: 36px;
+  }
+
+  &__item-price {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: rgba(244, 242, 241, 1);
+
+    @include desk {
+      display: flex;
+      justify-content: center;
+      margin-right: 20px;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+    }
   }
 
   &__item-duration {
-    display: flex;
-    margin-top: 36px;
-    max-width: 211px;
-    justify-content: center;
-    line-height: 40px;
+    margin-bottom: 30px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
     text-align: center;
     color: rgba(244, 242, 241, 1);
+
+    @include desk {
+      display: flex;
+      margin-top: 36px;
+      max-width: 211px;
+      justify-content: center;
+      line-height: 40px;
+      text-align: center;
+    }
   }
 }
 
 .abonements-container {
-  padding: 27px 80px 61px;
+  padding: 40px 16px;
+  @include desk {
+    padding: 27px 80px 61px;
+  }
 }
