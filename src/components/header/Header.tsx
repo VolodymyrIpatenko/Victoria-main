@@ -1,10 +1,9 @@
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GiPhone } from 'react-icons/gi';
 import navigation from '../../common/navigation/Navigation';
 import SwitchMode from '../switch-btn/LightSwitch';
-import { AiOutlineMenu } from 'react-icons/ai';
 import { Breakpoint } from 'react-socks';
-// import MobileMenuComponent from './MobileMenu';
+import MobileMenuComponent from './MobileMenu';
 
 const HeaderComponent: React.FC = () => {
   return (
@@ -39,13 +38,10 @@ const HeaderComponent: React.FC = () => {
               </li>
             </ul>
           </div>
-          <Breakpoint small down>
-            <AiOutlineMenu></AiOutlineMenu>
-          </Breakpoint>
+          <MobileMenuComponent />
         </header>
         <SwitchMode />
       </div>
-      {/* <MobileMenuComponent/> */}
     </>
   );
 };

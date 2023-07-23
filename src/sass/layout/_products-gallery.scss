@@ -1,29 +1,23 @@
 .products-gallery {
-  @include desk {
-    display: grid;
-    justify-content: center;
-    margin: 50px;
-    gap: 70px;
-  }
+  display: grid;
+  justify-content: center;
+  gap: 40px;
 
   @include desk {
-    display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, auto);
     align-items: center;
-    justify-content: center;
     margin: 50px;
   }
 
   &__item {
-    width: 200px;
+    width: 375px;
+    transition: 1s linear;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
     @include desk {
       width: 412px;
-      background-color: white;
-      transition: 1s linear;
-
-      border-radius: 5px;
-      cursor: pointer;
 
       &:hover {
         transform: scale(1.1);
@@ -46,31 +40,40 @@
   grid-template-columns: repeat(2, 150px);
   justify-content: center;
   gap: 30px;
+  margin-bottom: 50px;
   @include desk {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
   &__btn {
+    width: 150px;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 131, 0, 1);
+    cursor: pointer;
     @include desk {
       width: 170px;
-      height: 56px;
-      border-radius: 5px;
-      border: none;
-      background-color: rgba(255, 131, 0, 1);
-      font-family: Lato;
-      font-size: 20px;
-      line-height: 24px;
-      color: rgba(255, 255, 255, 1);
-      cursor: pointer;
     }
   }
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(255, 131, 0, 1);
   @include desk {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 120px;
     padding: 8px;
     font-size: 24px;
@@ -79,6 +82,13 @@
     color: rgba(255, 131, 0, 1);
   }
   &-btn {
+    width: 137px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgba(255, 131, 0, 1);
+    color: rgba(255, 131, 0, 1);
     @include desk {
       width: 137px;
       height: 48px;

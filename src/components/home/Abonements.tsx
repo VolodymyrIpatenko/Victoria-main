@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import type Abonements from '@entities/Abonements';
 import AbonementsList from 'src/common/data/AbonementsData';
-import { nanoid } from 'nanoid';
-const id = nanoid();
+import Contacts from '../contacts/Contacts';
+import Modal from '../modal/Modal';
+import { useToggle } from '../../hooks/customToggle';
 
 const AbonementComponent: React.FC = () => {
   const [data, _] = useState<Abonements[]>(AbonementsList);
+  const [isOpenContactForm, setOpenContactForm] = useToggle();
   return (
     <section>
       <div className="abonements-container">
@@ -17,10 +19,17 @@ const AbonementComponent: React.FC = () => {
                 <h3 className="abonements-list__item-title">{duration}</h3>
                 <p className="abonements-list__item-price">{price}</p>
                 <p className="abonements-list__item-duration">{expires}</p>
-                <button className="signup-btn">{action}</button>
+                <button onClick={() => setOpenContactForm.toggle()} className="signup-btn">
+                  {action}
+                </button>
               </li>
             );
           })}
+          {isOpenContactForm ? (
+            <Modal>
+              <Contacts />
+            </Modal>
+          ) : null}
         </ul>
       </div>
     </section>

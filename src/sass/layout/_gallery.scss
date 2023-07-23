@@ -1,3 +1,14 @@
+.gallery-photos {
+  display: grid;
+  gap: 30px;
+  &__img {
+    width: 420px;
+    @include desk {
+      width: 100%;
+    }
+  }
+}
+
 .gallery-column {
   @include desk {
     display: grid;

@@ -6,11 +6,12 @@ interface ImgListProps {
   handleClick: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
+
 const ProductsGalleryList = React.memo(({ itemsGallery, handleClick }: ImgListProps) => {
   return (
     <ul className="products-gallery">
       {itemsGallery.map(({ image, price, description }, index) => (
-        <li className="products-gallery__item">
+        <li key={index} className="products-gallery__item">
           <img width="300" src={image} alt={description} />
           <div className="products-gallery__card">
             <p>{description}</p>

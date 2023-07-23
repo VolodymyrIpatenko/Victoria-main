@@ -1,0 +1,16 @@
+.not-intersect {
+  // display: none;
+  color: transparent;
+}
+
+.intersect {
+  // width: 900px;
+  // height: 200px;
+  padding: 20px 60px;
+  // text-align: left;
+  clip-path: polygon(18% 0, 100% 0, 75% 100%, 0 100%);
+  transition: 2s;
+  color: red;
+  // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background-color: rgba(89, 95, 101, 1); /* Adding a background to the clipped area */
+}

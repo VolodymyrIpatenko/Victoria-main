@@ -22,7 +22,7 @@ const Gallery: React.FC = () => {
               ></FaExpandArrowsAlt>
             </>
           </Breakpoint>
-          <ul className={`${GalleryDirection}`}>
+          <ul className={`gallery-photos ${GalleryDirection}`}>
             <GalleryPhotosComponent />
           </ul>
         </div>

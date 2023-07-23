@@ -21,8 +21,8 @@ const ButtonsList = React.memo(({ filterItem }: Props) => {
 
   return (
     <ul className="buttons-list">
-      {buttons.map(button => (
-        <li>
+      {buttons.map((button, ind) => (
+        <li key={ind}>
           <button className="buttons-list__btn" onClick={() => filterItem(button)}>
             {button}
           </button>

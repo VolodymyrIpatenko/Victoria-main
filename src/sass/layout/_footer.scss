@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  background-color: rgba(250, 109, 6, 1);
 
   @include desk {
     display: flex;
     align-items: center;
     padding: 13px 75px 23px 65px;
-    background-color: rgba(250, 109, 6, 1);
   }
 }
 

@@ -1,5 +1,4 @@
 import Backdrop from './Backdrop';
-// import './Modal.styled';
 import { ReactNode } from 'react';
 
 interface ModalProps {
@@ -7,6 +6,7 @@ interface ModalProps {
 }
 
 const Modal = ({ children }: ModalProps) => {
+
   return <Backdrop>{children}</Backdrop>;
 };
 

@@ -1,25 +1,45 @@
 .contact-form {
-  width: 550px;
-  padding: 80px;
-  border-radius: 8px;
-  background-color: rgba(24, 28, 31, 1);
+  width: 375px;
+
+  @include desk {
+    width: 550px;
+    padding: 80px;
+    border-radius: 8px;
+    background-color: rgba(24, 28, 31, 1);
+  }
 
   &__input {
     margin-top: 32px;
     width: 350px;
     height: 48px;
+    padding: 16px;
     border: 1px solid $main-bg-color;
     border-radius: 8px;
     background-color: $main-bg-color;
+    &::placeholder {
+      font-size: 22px;
+      font-family: Poppins;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+    }
   }
   &__textarea {
     margin-top: 32px;
     width: 350px;
     height: 120px;
+    padding: 16px;
     border: 1px solid $main-bg-color;
     background-color: $main-bg-color;
     border-radius: 8px;
     resize: none;
+    &::placeholder {
+      font-size: 22px;
+      font-family: Poppins;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+    }
   }
   &__btn {
     width: 350px;

@@ -2,7 +2,8 @@ import React from 'react';
 import { GiPhone } from 'react-icons/gi';
 import { MdOutlineLocationOn } from 'react-icons/md';
 import { CiCalendar } from 'react-icons/ci';
-import { Breakpoint } from 'react-socks';
+// import { Breakpoint } from 'react-socks';
+import FindLocation from 'src/utils/Geolocation';
 
 const Contacts: React.FC = () => {
   return (
@@ -29,11 +30,8 @@ const Contacts: React.FC = () => {
         </address>
         <ul>
           <li>
-            <p>
+            <p className="calendar-icon">
               <CiCalendar />
-              <Breakpoint large up>
-                Режим роботи:
-              </Breakpoint>
             </p>
           </li>
           <li>
@@ -51,7 +49,8 @@ const Contacts: React.FC = () => {
             </p>
           </li>
         </ul>
-        <button type="button">Дістатися</button>
+        <FindLocation />
+        {/* <button type="button">Дістатися</button> */}
       </div>
     </section>
   );
