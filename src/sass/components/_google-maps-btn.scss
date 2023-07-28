@@ -13,8 +13,10 @@
   color: rgba(244, 242, 241, 1);
   @include desk {
     width: 195px;
-    border-radius: 2px;
+    top: 350px;
     left: 60px;
+    border-radius: 2px;
+
     width: 135px;
   }
   &:hover {
