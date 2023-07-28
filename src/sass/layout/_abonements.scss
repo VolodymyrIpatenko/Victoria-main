@@ -49,6 +49,7 @@
     background-color: $main-bg-color;
     @include desk {
       display: flex;
+      align-items: center;
       padding: 7px 36px 10px 25px;
       width: 628px;
       height: 65px;

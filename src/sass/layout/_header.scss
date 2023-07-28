@@ -38,3 +38,31 @@
 .desktop-tel {
   display: inline-block;
 }
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  &__link {
+    color: rgba(67, 72, 77, 1);
+  }
+
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+}
+
+.burger {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+

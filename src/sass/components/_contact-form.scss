@@ -1,5 +1,6 @@
 .contact-form {
   width: 375px;
+  position: relative;
 
   @include desk {
     width: 550px;
@@ -7,7 +8,6 @@
     border-radius: 8px;
     background-color: rgba(24, 28, 31, 1);
   }
-
   &__input {
     margin-top: 32px;
     width: 350px;
@@ -52,6 +52,7 @@
     font-size: 20px;
     line-height: 32px;
     color: rgba(244, 242, 241, 1);
+    cursor: pointer;
   }
   &__heading {
     font-family: Abril Fatface;
@@ -67,4 +68,17 @@
   align-items: center;
   justify-content: center;
   padding: 80px;
+}
+
+.thank-you-text {
+  font-size: 30px;
+  color: #fff;
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
 }

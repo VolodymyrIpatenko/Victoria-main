@@ -15,7 +15,7 @@ const PageFooter = () => {
             <img src={process.env.PUBLIC_URL + '/logo-type.png'} alt="логотип сайту" />
           </Link>
 
-          <nav className="nav">
+          {/* <nav className="nav">
             <ul className="nav-list">
               {navigation.map(({ id, title, path }, ind) => (
                 <li key={ind}>
@@ -25,7 +25,7 @@ const PageFooter = () => {
                 </li>
               ))}
             </ul>
-          </nav>
+          </nav> */}
           <ul className="contacts-list">
             <li>
               <a className="contacts-list__link" href="tel:+380 95 033 5563">
@@ -34,9 +34,9 @@ const PageFooter = () => {
               </a>
             </li>
           </ul>
-          <Breakpoint small down>
+          {/* <Breakpoint small down>
             <AiOutlineMenu></AiOutlineMenu>
-          </Breakpoint>
+          </Breakpoint> */}
         </div>
       </footer>
     </>

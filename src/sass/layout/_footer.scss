@@ -15,4 +15,12 @@
   @include desk {
     margin-left: auto;
   }
+  &__link {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(107, 107, 107, 1);
+  }
 }

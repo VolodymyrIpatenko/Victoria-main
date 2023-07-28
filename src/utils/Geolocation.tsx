@@ -31,5 +31,9 @@ export default function FindLocation(): JSX.Element {
     }
   };
 
-  return <button onClick={handleClick}>Go to Google Maps</button>;
+  return (
+    <button className="google-maps-btn" onClick={handleClick}>
+      Дістатися
+    </button>
+  );
 }

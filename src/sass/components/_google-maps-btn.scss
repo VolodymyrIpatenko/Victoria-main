@@ -1,13 +1,23 @@
-.signup-btn {
+.google-maps-btn {
+  position: absolute;
+  left: 150px;
+  top: 10px;
   width: 135px;
   line-height: 48px;
-  cursor: pointer;
   font-size: 20px;
   border: none;
+  transition: 1s;
   border-radius: 5px;
+  cursor: pointer;
   background: rgba(250, 109, 6, 1);
   color: rgba(244, 242, 241, 1);
   @include desk {
     width: 195px;
+    border-radius: 2px;
+    left: 60px;
+    width: 135px;
+  }
+  &:hover {
+    border-radius: 17px;
   }
 }

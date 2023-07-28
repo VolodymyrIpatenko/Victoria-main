@@ -6,6 +6,7 @@ import Observer from '../../utils/Observer';
 
 const CoachesList: React.FC = () => {
   const [coachesData, _] = useState<CoachData[]>(coachData);
+
   return (
     <section>
       <div className="coaches-container">
@@ -18,10 +19,9 @@ const CoachesList: React.FC = () => {
                 <h3>{name}</h3>
                 <Observer>
                   {({ isIntersecting }) => (
-                    <div className={isIntersecting ? 'intersect' : 'not-intersect'}>
-                      <p>{description}</p>
-                    </div>
-                    // <p className={isIntersecting ? 'intersect' : 'not-intersect'}>{description}</p>
+                    <p className={isIntersecting ? 'intersect' : 'not-intersect'}>
+                      {isIntersecting ? description : null}
+                    </p>
                   )}
                 </Observer>
               </li>

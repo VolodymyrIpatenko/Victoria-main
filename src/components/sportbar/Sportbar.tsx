@@ -23,6 +23,7 @@ const GalleryReact: React.FC = () => {
   function handleModalClose() {
     setSelectedImage(null);
   }
+  
   const filterItem = useCallback(
     (categItem: string) => {
       if (categItem === 'Все') {

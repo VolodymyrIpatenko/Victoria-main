@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 1;
+  animation: zoom 1.5s;
   top: 0;
   left: 0;
   right: 0;
@@ -10,10 +12,12 @@
   background: #000000e1;
 }
 
-// .backdrop.top {
-//   align-items: flex-start;
-// }
+@keyframes zoom {
+  from {
+    transform: scale(0.3);
+  }
 
-// .backdrop.bottom {
-//   align-items: flex-end;
-// }
+  to {
+    transform: scale(1);
+  }
+}

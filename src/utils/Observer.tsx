@@ -7,7 +7,7 @@ interface ObserverProps {
 
 const Observer: React.FC<ObserverProps> = ({ children }) => {
   const [isIntersecting, setIsIntersecting] = useState<boolean>(false);
-  const targetRef = useRef<HTMLDivElement>(null);
+  const targetRef = useRef<HTMLParagraphElement>(null);
 
   const onIntersect = (entries: IntersectionObserverEntry[]) =>
     setIsIntersecting(entries.some(entry => entry.isIntersecting));
@@ -18,9 +18,9 @@ const Observer: React.FC<ObserverProps> = ({ children }) => {
   useIntersectionObserver(targetRef, onIntersect, fallback);
 
   return (
-    <div ref={targetRef} className={isIntersecting ? 'intersect' : 'not-intersect'}>
+    <p ref={targetRef} className={isIntersecting ? 'intersect' : 'not-intersect'}>
       {children({ isIntersecting })}
-    </div>
+    </p>
   );
 };
 

@@ -9,6 +9,7 @@
 .coaches-list {
   @include desk {
     display: flex;
+    justify-content: space-around;
   }
   &__item {
     @include desk {

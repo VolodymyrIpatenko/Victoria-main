@@ -1,6 +1,6 @@
-import React, { useState, useContext, ChangeEvent, useEffect } from 'react';
+import React, { useState, useContext, ChangeEvent } from 'react';
 import Modal from '../modal/Modal';
-import validator from 'validator';
+import { AiOutlineClose } from 'react-icons/ai';
 import sendEmail from '../../utils/SubmitFunction';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import { useToggle } from '../../hooks/customToggle';
@@ -10,33 +10,23 @@ import 'react-toastify/dist/ReactToastify.css';
 const Contacts: React.FC = () => {
   const [data, setUserData] = useState({
     name: '',
+    surname: '',
     message: '',
   });
+
   const { darkMode } = useContext(DarkModeContext);
 
   const Theme = darkMode ? 'dark-theme' : 'light-theme';
 
-  const [email, setEmailError] = useState<string>('');
   const [phone, setPhoneNumber] = useState<string>('');
   const [isModalOpen, setModalOpen] = useToggle();
-  const { message, name } = data;
+  const { message, name, surname } = data;
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setUserData(prevState => ({ ...prevState, [e.target.name]: e.target.value }));
   };
 
-  const values =
-    name === '' || email === '' || phone === '' || message === '' || email !== 'Правильно';
-
-  const validateEmail = (e: ChangeEvent<HTMLInputElement>) => {
-    const email = e.target.value;
-
-    if (validator.isEmail(email)) {
-      toast.success('Вірно');
-    } else {
-      toast.error('Будь-ласка правильний email');
-    }
-  };
+  const values = surname === '' || name === '' || phone === '' || message === '';
 
   const validatePhoneNumber = (e: ChangeEvent<HTMLInputElement>) => {
     const phone = e.currentTarget.value;
@@ -60,6 +50,7 @@ const Contacts: React.FC = () => {
                 onChange={handleChange}
                 className="contact-form__input"
                 type="text"
+                name="name"
               />
             </div>
             <div>
@@ -68,14 +59,7 @@ const Contacts: React.FC = () => {
                 onChange={handleChange}
                 className="contact-form__input"
                 type="text"
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Пошта"
-                onChange={validateEmail}
-                className="contact-form__input"
-                type="email"
+                name="surname"
               />
             </div>
             <div>
@@ -91,8 +75,9 @@ const Contacts: React.FC = () => {
             <div>
               <textarea
                 className="contact-form__textarea"
-                name=""
+                name="message"
                 placeholder="Повідомлення"
+                onChange={handleChange}
               ></textarea>
             </div>
             <button
@@ -103,13 +88,9 @@ const Contacts: React.FC = () => {
             >
               {values ? 'Записатися' : 'Відправити'}
             </button>
-            {isModalOpen ? (
+            {isModalOpen && !values ? (
               <Modal>
-                {/* <ContactsBackdrop>
-                  <ModalContacts> */}
-                <p>Дякуємо!В найближчий час ми з вами зв'яжемося.</p>
-                {/* </ModalContacts>
-                </ContactsBackdrop> */}
+                <p className="thank-you-text">Дякуємо!В найближчий час ми з вами зв'яжемося.</p>
               </Modal>
             ) : null}
           </form>

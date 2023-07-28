@@ -8,7 +8,9 @@ import { DarkModeContext } from '../../context/DarkModeContext';
 
 const Home: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
+
   const Theme = darkMode ? 'dark-theme' : 'light-theme';
+
   return (
     <main>
       <div className={`${Theme}`}>
