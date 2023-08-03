@@ -24,7 +24,7 @@ const Contacts: React.FC = () => {
               <p>
                 <MdOutlineLocationOn />
               </p>
-              <p>вул.Спортивна 3, Остриця, Чернівецька обл.</p>
+              <p className="loc">вул.Спортивна 3, Остриця, Чернівецька обл.</p>
             </li>
           </ul>
         </address>

@@ -1,6 +1,5 @@
 import React, { useState, useContext, ChangeEvent } from 'react';
 import Modal from '../modal/Modal';
-import { AiOutlineClose } from 'react-icons/ai';
 import sendEmail from '../../utils/SubmitFunction';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import { useToggle } from '../../hooks/customToggle';
@@ -44,7 +43,7 @@ const Contacts: React.FC = () => {
         <div className={`${Theme} contact-container`}>
           <form onSubmit={sendEmail} className="contact-form">
             <h2 className="contact-form__heading">Записатися</h2>
-            <AiOutlineClose className="close-icon"></AiOutlineClose>
+
             <div>
               <input
                 placeholder="Ім'я"
