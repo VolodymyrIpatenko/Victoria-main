@@ -26,7 +26,7 @@ const AbonementComponent: React.FC = () => {
             );
           })}
           {isOpenContactForm ? (
-            <Modal>
+            <Modal onClose={() => setOpenContactForm.toggle()}>
               <Contacts />
             </Modal>
           ) : null}

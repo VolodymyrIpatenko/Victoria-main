@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
                 Записатися
               </button>
               {isOpenContactForm ? (
-                <Modal>
+                <Modal onClose={() => setOpenContactForm.toggle()}>
                   <Contacts />
                 </Modal>
               ) : null}
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
                 Записатися
               </button>
               {isOpenContactForm ? (
-                <Modal>
+                <Modal onClose={() => setOpenContactForm.toggle()}>
                   <Contacts />
                 </Modal>
               ) : null}

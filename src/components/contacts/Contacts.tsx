@@ -44,6 +44,7 @@ const Contacts: React.FC = () => {
         <div className={`${Theme} contact-container`}>
           <form onSubmit={sendEmail} className="contact-form">
             <h2 className="contact-form__heading">Записатися</h2>
+            <AiOutlineClose className="close-icon"></AiOutlineClose>
             <div>
               <input
                 placeholder="Ім'я"
@@ -89,7 +90,7 @@ const Contacts: React.FC = () => {
               {values ? 'Записатися' : 'Відправити'}
             </button>
             {isModalOpen && !values ? (
-              <Modal>
+              <Modal onClose={() => setModalOpen.toggle()}>
                 <p className="thank-you-text">Дякуємо!В найближчий час ми з вами зв'яжемося.</p>
               </Modal>
             ) : null}

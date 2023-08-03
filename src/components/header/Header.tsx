@@ -39,8 +39,8 @@ const HeaderComponent: React.FC = () => {
             </ul>
           </div>
           <MobileMenuComponent />
+          <SwitchMode />
         </header>
-        <SwitchMode />
       </div>
     </>
   );
