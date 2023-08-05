@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect, ReactNode } from 'react';
-import { useToggle } from '../hooks/customToggle';
 
 interface DarkModeContextType {
   darkMode: boolean;
