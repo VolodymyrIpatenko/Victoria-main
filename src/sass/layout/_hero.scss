@@ -26,67 +26,40 @@
   }
   &-container {
     @include desk {
+      display: flex;
       padding: 180px 55px 0px 55px;
     }
   }
-  &-wrraper {
-    @include desk {
-      display: flex;
-    }
-  }
+
   &-title {
-    font-family: Abril Fatface;
+    font-family: 'Abril Fatface', sans-serif;
     font-size: 64px;
     font-weight: 400;
     line-height: 140px;
 
     @include desk {
       margin-bottom: 30px;
-      font-family: Abril Fatface;
       font-size: 140px;
-      font-weight: 400;
       line-height: 140px;
       letter-spacing: 0px;
       text-align: left;
     }
   }
   &-description {
-    font-family: Abril Fatface;
     font-size: 28px;
-    font-weight: 400;
     line-height: 38px;
 
     @include desk {
       margin-bottom: 30px;
-      font-family: Abril Fatface;
       font-size: 32px;
-      font-weight: 400;
       line-height: 43px;
       letter-spacing: 0em;
       text-align: left;
     }
   }
-  &-btn {
-    @include desk {
-      width: 320px;
-      height: 64px;
-      padding: 16px 60px;
-      border-radius: 8px;
-      border: none;
-      background-color: rgba(250, 109, 6, 1);
-      font-family: Poppins;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 32px;
-      letter-spacing: 0.05em;
-      color: rgba(244, 242, 241, 1);
-      cursor: pointer;
-    }
-  }
+
   .social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centredFlex;
     gap: 11px;
     @include desk {
       display: flex;
@@ -147,4 +120,8 @@
       top: 350px;
     }
   }
+}
+
+.breakpoint {
+  width: 100%;
 }

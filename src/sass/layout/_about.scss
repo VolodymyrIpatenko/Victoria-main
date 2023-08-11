@@ -1,8 +1,6 @@
 .about-container {
   @include desk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centredFlex;
     gap: 38px;
   }
 }
@@ -21,9 +19,7 @@
 
   @include desk {
     max-width: 640px;
-    font-family: Lato;
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.005em;
     text-align: left;

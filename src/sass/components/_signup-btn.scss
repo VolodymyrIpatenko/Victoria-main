@@ -1,11 +1,9 @@
 .signup-btn {
   width: 135px;
   line-height: 48px;
-  cursor: pointer;
   font-size: 20px;
-  border: none;
   border-radius: 5px;
-  background: rgba(250, 109, 6, 1);
+  background-color: $main-color;
   color: rgba(244, 242, 241, 1);
   @include desk {
     width: 195px;

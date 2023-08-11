@@ -1,5 +1,3 @@
-// import { Footer, MailLink } from './Footer.styled';
-// import { LogoImg } from '../header/Header.styled';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { Breakpoint } from 'react-socks';
 import { Outlet, Link } from 'react-router-dom';
@@ -34,9 +32,6 @@ const PageFooter = () => {
               </a>
             </li>
           </ul>
-          {/* <Breakpoint small down>
-            <AiOutlineMenu></AiOutlineMenu>
-          </Breakpoint> */}
         </div>
       </footer>
     </>

@@ -12,14 +12,16 @@ ul {
 }
 
 body {
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
 }
 
 .sportbar-container {
   padding: 30px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }

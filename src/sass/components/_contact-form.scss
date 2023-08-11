@@ -1,6 +1,5 @@
 .contact-form {
   width: 375px;
-  position: relative;
 
   @include desk {
     width: 550px;
@@ -35,7 +34,7 @@
     resize: none;
     &::placeholder {
       font-size: 22px;
-      font-family: Poppins;
+      font-family: 'Poppins';
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0.05em;
@@ -47,26 +46,23 @@
     margin-top: 37px;
     border: 1px solid $main-bg-color;
     border-radius: 8px;
-    background-color: rgba(250, 109, 6, 1);
-    font-family: Lato;
+    background-color: $main-color;
     font-size: 20px;
     line-height: 32px;
     color: rgba(244, 242, 241, 1);
-    cursor: pointer;
+    border: none;
   }
   &__heading {
-    font-family: Abril Fatface;
+    font-family: 'Abril Fatface';
     font-size: 48px;
     font-weight: 400;
     line-height: 48px;
-    color: rgba(250, 109, 6, 1);
+    color: $main-color;
   }
 }
 
 .contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centredFlex;
   padding: 80px;
 }
 

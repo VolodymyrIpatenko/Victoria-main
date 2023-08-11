@@ -1,7 +1,4 @@
 import React from 'react';
-// import { ProductsVariety, CategoryButton } from './SportbarGallery.styled';
-// import { v4 as uuid } from 'uuid';
-// const id = uuid();
 
 type FilterItem = (arg: string) => void;
 interface Props {

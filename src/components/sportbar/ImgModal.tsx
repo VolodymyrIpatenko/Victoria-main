@@ -9,9 +9,6 @@ interface ImageModalProps {
 export default function ImageModal({ imageObj, handleClose }: ImageModalProps): JSX.Element {
   return (
     <Modal onClose={handleClose}>
-      <button className="close-btn" onClick={handleClose}>
-        &times;
-      </button>
       <img className="modal-img" src={imageObj.image} alt={imageObj.description} />
       <p className="modal-desc">{imageObj.description}</p>
     </Modal>

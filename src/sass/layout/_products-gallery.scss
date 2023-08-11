@@ -50,13 +50,10 @@
     width: 150px;
     height: 56px;
     border-radius: 5px;
-    border: none;
-    font-family: Lato;
     font-size: 20px;
     line-height: 24px;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(255, 131, 0, 1);
-    cursor: pointer;
+    background-color: $main-color;
     @include desk {
       width: 170px;
     }
@@ -64,39 +61,33 @@
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centredFlex;
   gap: 120px;
   padding: 8px;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  color: rgba(255, 131, 0, 1);
+  color: $main-color;
   @include desk {
     gap: 120px;
     padding: 8px;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
-    color: rgba(255, 131, 0, 1);
+    color: $main-color;
   }
   &-btn {
     width: 137px;
     height: 48px;
     border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    border: 2px solid rgba(255, 131, 0, 1);
-    color: rgba(255, 131, 0, 1);
+    border: 2px solid $main-color;
+    color: $main-color;
     @include desk {
       width: 137px;
       height: 48px;
       border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      border: 2px solid rgba(255, 131, 0, 1);
-      color: rgba(255, 131, 0, 1);
+      border: 2px solid $main-color;
+      color: $main-color;
     }
   }
 }

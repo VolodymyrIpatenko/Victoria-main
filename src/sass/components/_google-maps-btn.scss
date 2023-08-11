@@ -5,18 +5,15 @@
   width: 135px;
   line-height: 48px;
   font-size: 20px;
-  border: none;
   transition: 1s;
   border-radius: 5px;
-  cursor: pointer;
-  background: rgba(250, 109, 6, 1);
+  background: $main-color;
   color: rgba(244, 242, 241, 1);
   @include desk {
     width: 195px;
     top: 350px;
     left: 60px;
     border-radius: 2px;
-
     width: 135px;
   }
   &:hover {
