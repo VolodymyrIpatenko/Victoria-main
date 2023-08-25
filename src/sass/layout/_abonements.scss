@@ -22,7 +22,7 @@
     font-weight: 400;
     line-height: 32px;
     transition: 3s;
-    border-radius: 5px;
+    border-radius: $main-border-radius;
     background: $main-bg-color;
     @include desk {
       gap: 36px;
@@ -60,7 +60,7 @@
   }
 
   &__item:hover {
-    background-color: rgba(244, 242, 241, 1);
+    background-color: $main-white-color;
   }
   &__item:hover h3,
   &__item:hover p {
@@ -70,7 +70,7 @@
   &__item-title {
     font-weight: 700;
     line-height: 38px;
-    color: rgba(244, 242, 241, 1);
+    color: $main-white-color;
 
     @include desk {
       font-size: 32px;
@@ -90,7 +90,7 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 34px;
-    color: rgba(244, 242, 241, 1);
+    color:$main-white-color;
 
     @include desk {
       display: flex;
@@ -108,7 +108,7 @@
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    color: rgba(244, 242, 241, 1);
+    color: $main-white-color;
 
     @include desk {
       display: flex;

@@ -13,7 +13,7 @@
   &__item {
     width: 375px;
     transition: 1s linear;
-    border-radius: 5px;
+    border-radius:  $main-border-radius;
     cursor: pointer;
     background-color: white;
     @include desk {
@@ -79,13 +79,13 @@
   &-btn {
     width: 137px;
     height: 48px;
-    border-radius: 5px;
+    border-radius:  $main-border-radius;
     border: 2px solid $main-color;
     color: $main-color;
     @include desk {
       width: 137px;
       height: 48px;
-      border-radius: 5px;
+      border-radius:  $main-border-radius;
       border: 2px solid $main-color;
       color: $main-color;
     }

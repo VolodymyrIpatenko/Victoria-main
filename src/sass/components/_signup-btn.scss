@@ -2,9 +2,9 @@
   width: 135px;
   line-height: 48px;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius:  $main-border-radius;
   background-color: $main-color;
-  color: rgba(244, 242, 241, 1);
+  color:$main-white-color;
   @include desk {
     width: 195px;
   }
