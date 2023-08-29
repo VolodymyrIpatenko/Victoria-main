@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import coachData from 'src/common/data/CoachData';
 import type CoachData from '../../entities/CoachData';
-import '@fremtind/jkl-core/core.min.css';
-import Observer from '../../utils/Observer';
 
 const CoachesList: React.FC = () => {
   const [coachesData, _] = useState<CoachData[]>(coachData);
@@ -17,13 +15,7 @@ const CoachesList: React.FC = () => {
               <li className="coaches-list__item" key={ind}>
                 <img src={photo} alt={alt} />
                 <h3>{name}</h3>
-                <Observer>
-                  {({ isIntersecting }) => (
-                    <p className={isIntersecting ? 'intersect' : 'not-intersect'}>
-                      {isIntersecting ? description : null}
-                    </p>
-                  )}
-                </Observer>
+                <p>{description}</p>
               </li>
             );
           })}

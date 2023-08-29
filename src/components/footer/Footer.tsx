@@ -26,7 +26,7 @@ const PageFooter = () => {
           </nav>
           <ul className="contacts-list">
             <li>
-              <a className="contacts-list__link" href="tel:+380 95 033 5563">
+              <a className="contacts-list__link" href="tel:+380950335563">
                 <GiPhone></GiPhone>
                 +380 95 033 5563
               </a>

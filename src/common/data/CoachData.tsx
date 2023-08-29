@@ -2,14 +2,14 @@ import CoachData from '../../entities/CoachData';
 
 const coachData: CoachData[] = [
   {
-    photo: 'https://volodymyripatenko.github.io/victoria-react/Den.png',
+    photo: 'https://volodymyripatenko.github.io/victoria-react/Den.webp',
     alt: 'Наш тренер',
     name: 'Денис Пламада',
     description:
       'Кмс по жиму штанги лежачі б/е WPRO.Досвід роботи тренером 3 роки Виступаючий спортсмен по Павеліфтінгу.Особисті якості:Комунікабельність.Мотивую до нових досягнень у спорті.Направлення тренуваннь:Вдосконалення технік,Збільшення силових результатів,Готую до змагань по паверліфтингу. Режим роботи:Пн.Ср.Пт.14:30-21:30 Вт.Чт. 15:00-18:00 Індивідуальні тренування Пн.-Пт 13:00-14:30 Субота Неділя вихідний. Прайс: Місяць-900грн(три рази на тиждень) Разове тренування 100грн Індивідуальне тренування 250грн',
   },
   {
-    photo: 'https://volodymyripatenko.github.io/victoria-react/Alex.png',
+    photo: 'https://volodymyripatenko.github.io/victoria-react/Alex.webp',
     alt: 'Наш тренер',
     name: 'Олександр Коваленко',
     description:

@@ -32,8 +32,8 @@ const HeaderComponent: React.FC = () => {
                 <Breakpoint className="desktop-tel" large up>
                   <GiPhone></GiPhone>
                 </Breakpoint>
-                <a className="contacts-list__link" href="tel:+380974456324">
-                  +380974456324
+                <a className="contacts-list__link" href="tel:+380950335563">
+                  +380 95 033 5563
                 </a>
               </li>
             </ul>

@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </Breakpoint>
         </div>
         <div className="wrapp">
-          <img className="hero-img" src={process.env.PUBLIC_URL + '/hero.png'} alt="" />
+          <img className="hero-img" src={process.env.PUBLIC_URL + '/hero.webp'} alt="" />
           <Breakpoint small down>
             <button className="signup-btn" onClick={() => setOpenContactForm.toggle()}>
               Записатися
