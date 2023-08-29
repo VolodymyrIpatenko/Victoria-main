@@ -13,7 +13,8 @@
 
   &__item:not(:last-child) {
     width: 160px;
-    height: 257px;
+    height: 300px;
+    padding:10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +35,7 @@
   &__item:last-child {
     width: 330px;
     height: 90px;
+    padding: 10px;
     transition: 2s;
     border-radius: 5px;
     background-color: $main-bg-color;
@@ -54,9 +56,11 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
+    margin-left: 30px;
   }
   &__item:last-child p {
     display: inline-block;
+    
   }
 
   &__item:hover {
