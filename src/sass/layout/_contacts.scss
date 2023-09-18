@@ -47,5 +47,12 @@
 
 .calendar-icon {
   position: absolute;
-  left: 80px;
+  left: 120px;
+}
+
+.saturday-time{
+  @include desk {
+    margin-left: 20px;
+  }
+
 }

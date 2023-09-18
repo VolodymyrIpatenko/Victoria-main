@@ -44,7 +44,7 @@ const Contacts: React.FC = () => {
           </li>
           <li>
             <p className="schedule-des">
-              <span>Субота</span> <time>10:00-19:00</time>
+              <span>Субота</span> <time className="saturday-time">10:00-19:00</time>
             </p>
             <p className="schedule-desc">
               <span> Неділя</span> <span>вихідний</span>
